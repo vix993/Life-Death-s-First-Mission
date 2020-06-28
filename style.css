@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+@font-face {
+  font-family: mononoki;
+  src: url('imagens/assets/mononoki.ttf');
+}
+
+.welcome-screen-button {
+  background-color: #ffffff00;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 32px;
+  font-family: mononoki;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.welcome-screen-button:hover {
+  background-color: #fffffff0;
+  color: black;
+}
+
+@media (max-width: 480px) {
+  .welcome-screen-button {
+    font-size: 14px;
+  }
+}

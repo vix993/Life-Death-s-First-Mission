@@ -1,0 +1,7 @@
+{
+  "configurations":{
+    "healthPoints": 100,
+    "minVel": 10,
+    "maxVel": 30
+  }
+}
