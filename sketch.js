@@ -34,6 +34,7 @@ function keyPressed(){
   if (currentScene == 'controls'){
     controls.keyPressed(keyCode);
   }
+  return false;
 }
 function swiped(event){
   game.swiped(event);
