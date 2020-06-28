@@ -9,7 +9,7 @@ function setup() {
     "If I fail, mom's gonna be fuming...",
     width /3, height - height / 3, 'controls');
   restartButton = new StateButton(
-    'I can`t return home without completing my mission!', width /4, height - height / 3, 'game');
+    "I can't return home without completing my mission!", width /4, height - height / 3, 'game');
   game.setup();
   welcomeScreen.setup();
   gameOver.setup();
