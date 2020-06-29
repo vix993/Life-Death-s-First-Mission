@@ -69,7 +69,6 @@ class Game {
     heroSlashSound.setVolume(0.5);
     enemyJumpSound.setVolume(0.5);
     damageSound.setVolume(0.5);
-    sampleIsPlaying = true;
   }
 
   mousePressed() {
