@@ -123,7 +123,7 @@ class Game {
     }
   }
   draw() {
-    if (frameCount < 20) {
+    if (frameCount < 10) {
       heroAnimations.forEach(heroAnimation => {
         heroAnimation.tempInvincibility(2000);
       });
