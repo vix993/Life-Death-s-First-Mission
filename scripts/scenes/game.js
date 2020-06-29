@@ -168,17 +168,17 @@ class Game {
       sceneryG2.makeFaster(0.8);
       sword.makeFaster(0.5)
     }
-    if (points.points % 1000 > 500){
-    	sceneries2.forEach(scenery => {
-      	scenery.render();
-      	scenery.move();
-    	});
-    } else {
+    //if (points.points % 1000 > 500){
+    //	sceneries2.forEach(scenery => {
+    //  	scenery.render();
+    //  	scenery.move();
+    //	});
+    //} else {
 	sceneries.forEach(scenery => {
 	scenery.render();
 	scenery.move();
 	})
-    }
+    //}
     if (!isSwordCollected){
       swordDuration = 15;
       frameRef2 = 0;
