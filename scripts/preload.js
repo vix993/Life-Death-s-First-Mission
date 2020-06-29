@@ -7,8 +7,8 @@ function preload(){
 
   imageSceneryGround2 = loadImage('imagens/cenario/Ground2.png');
   imageSceneryForeround2 = loadImage('imagens/cenario/Foreground2.png');
-  imageSceneryMiddleground2 = loadImage('imagens/cenario/Middle_Decor.png');
-  imageSceneryBackground2 = loadImage('imagens/cenario/BG_Decor.png');
+  imageSceneryMiddleground2 = loadImage('imagens/cenario/Middle_Decor2.png');
+  imageSceneryBackground2 = loadImage('imagens/cenario/BG_Decor2.png');
   imageScenerySky2 = loadImage('imagens/cenario/Sky2.png');
 
   imageHero = loadImage('imagens/personagem/reaperManSpriteMap.png');
