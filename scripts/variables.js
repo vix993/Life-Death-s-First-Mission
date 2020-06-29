@@ -40,6 +40,7 @@ let isSlashing;
 let isHero = true;
 let isSwordCollected = false;
 let isCoolDown = false;
+let isNewScenery = false;
 let swordDuration = 15;
 
 let msg = "swiped";
@@ -52,6 +53,12 @@ let imageSceneryForeground;
 let imageSceneryMiddleground;
 let imageSceneryBackground;
 let imageScenerySky;
+let imageSceneryGround2;
+let imageSceneryForeground2;
+let imageSceneryMiddleground2;
+let imageSceneryBackground2;
+let imageScenerySky2;
+
 let imageHero;
 let imageHeroJump;
 let imageHeroBlink;
@@ -65,6 +72,7 @@ let welcomeScreenBG;
 let welcomeScreenHero;
 
 let sceneryG;
+let sceneryG2;
 let heroRun;
 let heroJump;
 let heroSlash;
@@ -146,3 +154,4 @@ const heroAnimations = [];
 const enemies = [];
 
 const sceneries = [];
+const sceneries2 = [];
