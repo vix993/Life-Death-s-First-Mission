@@ -199,10 +199,6 @@ class Game {
     if (!sampleIsPlaying) {
       gameSound.loop();
     }
-
-    points.addPoint();
-    points.render('#fff', 50, 'Score', height / 15);
-    health.render('#00ff00', height - 20, 'HP', height / 20);
     
     if (isSlashing){
       currentHeroAnimation = 2;
@@ -257,6 +253,9 @@ class Game {
     }
     sceneryG.render();
     sceneryG.move();
+    points.addPoint();
+    points.render('#fff', 50, 'Score', height / 15);
+    health.render('#00ff00', height - 20, 'HP', height / 20);
     /* randomize zombie jumps*/
     if (currentEnemy === 0) {
       enemy.randomizeJump(frameRef, enemy, enemyJumpSound)
