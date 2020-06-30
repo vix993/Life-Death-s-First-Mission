@@ -1,7 +1,7 @@
 function setup() {
   //createCanvas(windowWidth, windowHeight);
   const canvasElt = createCanvas(400, 600).elt;
-  canvasElt.style.width = '100%', canvasElt.style.height = '100%'
+//  canvasElt.style.width = '100%', canvasElt.style.height = '100%'
   frameRate(30);
   game = new Game();
   controls = new Controls();
