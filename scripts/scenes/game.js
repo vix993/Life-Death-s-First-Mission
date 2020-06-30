@@ -17,6 +17,17 @@ class Game {
     sceneries.push(sceneryMg);
     sceneries.push(sceneryFg);
 
+    const sceneryFg2 = new Scenery(imageSceneryForeground2, 3.5);
+    const sceneryMg2 = new Scenery(imageSceneryMiddleground2, 3);
+    const sceneryBg2 = new Scenery(imageSceneryBackground2, 2);
+    const scenerySky2 = new Scenery(imageScenerySky2, 0.5);
+    sceneryG2 = new Scenery(imageSceneryGround2, 4);
+    
+    sceneries2.push(scenerySky2);
+    sceneries2.push(sceneryBg2);
+    sceneries2.push(sceneryMg2);
+    sceneries2.push(sceneryFg2);
+
     points = new Points();
     health = new Points();
 
@@ -123,7 +134,7 @@ class Game {
     }
   }
   draw() {
-    if (frameCount < 20) {
+    if (frameCount < 10) {
       heroAnimations.forEach(heroAnimation => {
         heroAnimation.tempInvincibility(2000);
       });
@@ -134,6 +145,11 @@ class Game {
       sceneries[2].initStage1(3);
       sceneries[3].initStage1(3.5);
       sceneryG.initStage1(4);
+      sceneries2[0].initStage1(0.5);
+      sceneries2[1].initStage1(2);
+      sceneries2[2].initStage1(3);
+      sceneries2[3].initStage1(3.5);
+      sceneryG2.initStage1(4);
       sword.initStage1(3.5)
     }
     if (points.points / 100 > currentStage) {
@@ -145,12 +161,24 @@ class Game {
       sceneries[2].makeFaster(0.5);
       sceneries[3].makeFaster(0.8);
       sceneryG.makeFaster(0.8);
+      sceneries2[0].makeFaster(0.1);
+      sceneries2[1].makeFaster(0.2);
+      sceneries2[2].makeFaster(0.5);
+      sceneries2[3].makeFaster(0.8);
+      sceneryG2.makeFaster(0.8);
       sword.makeFaster(0.5)
     }
-    sceneries.forEach(scenery => {
-      scenery.render();
-      scenery.move();
-    });
+    //if (points.points % 1000 > 500){
+    //	sceneries2.forEach(scenery => {
+    //  	scenery.render();
+    //  	scenery.move();
+    //	});
+    //} else {
+	sceneries.forEach(scenery => {
+	scenery.render();
+	scenery.move();
+	})
+    //}
     if (!isSwordCollected){
       swordDuration = 15;
       frameRef2 = 0;
@@ -171,10 +199,6 @@ class Game {
     if (!sampleIsPlaying) {
       gameSound.loop();
     }
-
-    points.addPoint();
-    points.render('#fff', 50, 'Score', height / 15);
-    health.render('#00ff00', height - 20, 'HP', height / 20);
     
     if (isSlashing){
       currentHeroAnimation = 2;
@@ -229,6 +253,9 @@ class Game {
     }
     sceneryG.render();
     sceneryG.move();
+    points.addPoint();
+    points.render('#fff', 50, 'Score', height / 15);
+    health.render('#00ff00', height - 20, 'HP', height / 20);
     /* randomize zombie jumps*/
     if (currentEnemy === 0) {
       enemy.randomizeJump(frameRef, enemy, enemyJumpSound)

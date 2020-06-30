@@ -20,7 +20,7 @@ class GameOver {
      textAlign(CENTER)
     fill('#fff')
     textFont(gameFont, width / 30);
-    text("Bollocks... mom's gonna be livid...", width / 2, height/3);
+    text("Bollocks... mother's gonna be livid...", width / 2, height/3);
     textFont(gameFont, width / 35);
     text('Total Score: ' + Math.floor(endScore), width / 2, height - (height / 2))
   }

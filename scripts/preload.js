@@ -4,7 +4,13 @@ function preload(){
   imageSceneryMiddleground = loadImage('imagens/cenario/Middle_Decor.png');
   imageSceneryBackground = loadImage('imagens/cenario/BG_Decor.png');
   imageScenerySky = loadImage('imagens/cenario/Sky.png');
-  
+
+  imageSceneryGround2 = loadImage('imagens/cenario/Ground2.png');
+  imageSceneryForeround2 = loadImage('imagens/cenario/Foreground2.png');
+  imageSceneryMiddleground2 = loadImage('imagens/cenario/Middle_Decor2.png');
+  imageSceneryBackground2 = loadImage('imagens/cenario/BG_Decor2.png');
+  imageScenerySky2 = loadImage('imagens/cenario/Sky2.png');
+
   imageHero = loadImage('imagens/personagem/reaperManSpriteMap.png');
   imageHeroJump = loadImage('imagens/personagem/reaperManJump.png');
   imageHeroSlide = loadImage('imagens/personagem/slidingreaper.png');

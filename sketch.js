@@ -8,7 +8,7 @@ function setup() {
   welcomeScreen = new WelcomeScreen();
   gameOver = new GameOver();
   stateButton = new StateButton(
-    "If I fail, mom's gonna be fuming...",
+    "If I fail, mother's gonna be fuming...",
     width /3, height - height / 3, 'controls');
   restartButton = new StateButton(
     "I can't return home without completing my mission!", width /4, height - height / 3, 'game');
