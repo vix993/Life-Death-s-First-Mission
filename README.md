@@ -8,6 +8,6 @@
 
 ##### My game came out as an endless scroller with some custom mechanics
 
-###### where each character action warrants a new animation.
+##### where each character action warrants a new animation.
 
-###### My game assets came from: https://craftpix.net/
+##### My game assets came from: https://craftpix.net/
